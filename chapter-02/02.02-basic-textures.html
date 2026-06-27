@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>02.02 - Basic textures</title>
+    <title>02.02 - Базовые текстуры | 02.02 - Basic textures</title>
     <script src="../libs/three.js"></script>
     <script src="../libs/OrbitControls.js"></script>
     <script src="../libs/dat.gui.min.js"></script>
@@ -107,7 +107,7 @@
 
     function addControlGui(controlObject) {
         var gui = new dat.GUI();
-        gui.add(controlObject, 'rotationSpeed', -0.01, 0.01);
+        gui.add(controlObject, 'rotationSpeed', -0.01, 0.01).name('СкорВращен | rotationSpeed');
     }
 
     function addStatsObject() {

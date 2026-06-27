@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>02.03 - Add lighting</title>
+    <title>02.03 - Добавьте освещение | 02.03 - Add lighting</title>
     <script src="../libs/three.js"></script>
     <script src="../libs/OrbitControls.js"></script>
     <script src="../libs/dat.gui.min.js"></script>
@@ -118,9 +118,9 @@
 
     function addControlGui(controlObject) {
         var gui = new dat.GUI();
-        gui.add(controlObject, 'rotationSpeed', -0.01, 0.01);
-        gui.addColor(controlObject, 'ambientLightColor');
-        gui.addColor(controlObject, 'directionalLightColor');
+        gui.add(controlObject, 'rotationSpeed', -0.01, 0.01).name('СкорВращен | rotationSpeed');
+		gui.add(controlObject, 'ambientLightColor', -0.01, 0.01).name('ЦветОкружСвета | ambientLightColor');
+		gui.add(controlObject, 'directionalLightColor', -0.01, 0.01).name('ЦветНаправлСвета | directionalLightColor');
     }
 
     function addStatsObject() {

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <html>
         <head>
-            <title>02.04 - Starry background</title>
+            <title>02.04 - Звездный фон | 02.04 - Starry background</title>
             <script src="../libs/three.js"></script>
             <script src="../libs/OrbitControls.js"></script>
             <script src="../libs/dat.gui.min.js"></script>
@@ -159,10 +159,10 @@
 
         function addControlGui(controlObject) {
             var gui = new dat.GUI();
-            gui.add(controlObject, 'rotationSpeed', -0.01, 0.01);
-            gui.addColor(controlObject, 'ambientLightColor');
-            gui.addColor(controlObject, 'directionalLightColor');
-            }
+            gui.add(controlObject, 'rotationSpeed', -0.01, 0.01).name('СкорВращен | rotationSpeed');
+			gui.add(controlObject, 'ambientLightColor', -0.01, 0.01).name('ЦветОкружСвета | ambientLightColor');
+			gui.add(controlObject, 'directionalLightColor', -0.01, 0.01).name('ЦветНаправлСвета | directionalLightColor');
+		    }
 
         function addStatsObject() {
             stats = new Stats();

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>02.07 - Object overlay</title>
+    <title>02.07 - Наложение объекта | 02.07 - Object overlay</title>
     <script src="../libs/three.js"></script>
     <script src="../libs/OrbitControls.js"></script>
     <script src="../libs/dat.gui.min.js"></script>
@@ -262,9 +262,9 @@ function createCloudMaterial() {
 
 function addControlGui(controlObject) {
     var gui = new dat.GUI();
-    gui.add(controlObject, 'rotationSpeed', -0.01, 0.01);
-    gui.addColor(controlObject, 'ambientLightColor');
-    gui.addColor(controlObject, 'directionalLightColor');
+    gui.add(controlObject, 'rotationSpeed', -0.01, 0.01).name('СкорВращен | rotationSpeed');
+	gui.add(controlObject, 'ambientLightColor').name('ЦветОкружСвета | ambientLightColor');
+	gui.add(controlObject, 'directionalLightColor').name('ЦветНаправлСвета | directionalLightColor');
 }
 
 function addStatsObject() {
