@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>01.06 - Statistics</title>
+    <title>01.06 - Статистика | 01.06 - Statistics</title>
     <script src="../libs/three.js"></script>
     <script src="../libs/dat.gui.min.js"></script>
     <script src="../libs/stats.min.js"></script>
@@ -107,9 +107,9 @@
 
     function addControlGui(controlObject) {
         var gui = new dat.GUI();
-        gui.add(controlObject, 'rotationSpeed', -0.01, 0.01);
-        gui.add(controlObject, 'opacity', 0.1, 1);
-        gui.addColor(controlObject, 'color');
+        gui.add(controlObject, 'rotationSpeed', -0.01, 0.01).name('СкорВращен | rotationSpeed');
+        gui.add(controlObject, 'opacity', 0.1, 1).name('непрозрач | opacity');
+        gui.addColor(controlObject, 'color').name('цвет | color');
     }
 
     function addStatsObject() {

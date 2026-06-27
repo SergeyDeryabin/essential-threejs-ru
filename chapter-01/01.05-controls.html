@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>01.05 - Controls</title>
+    <title>01.05 - Контролы(Элементы управления) | 01.05 - Controls</title>
     <script src="../libs/three.js"></script>
     <script src="../libs/dat.gui.min.js"></script>
     <style>
@@ -97,9 +97,9 @@
 
     function addControlGui(controlObject) {
         var gui = new dat.GUI();
-        gui.add(controlObject, 'rotationSpeed', -0.01, 0.01);
-        gui.add(controlObject, 'opacity', 0.1, 1);
-        gui.addColor(controlObject, 'color');
+        gui.add(controlObject, 'rotationSpeed', -0.01, 0.01).name('СкорВращен | rotationSpeed');
+        gui.add(controlObject, 'opacity', 0.1, 1).name('непрозрач | opacity');
+        gui.addColor(controlObject, 'color').name('цвет | color');
     }
 
 
