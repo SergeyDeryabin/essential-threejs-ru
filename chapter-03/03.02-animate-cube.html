@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>03.02 - Animate a cube</title>
+    <title>03.02 - Анимировать куб | 03.02 - Animate a cube</title>
     <script src="../libs/three.js"></script>
     <script src="../libs/dat.gui.min.js"></script>
     <script src="../libs/stats.min.js"></script>
@@ -260,10 +260,10 @@
 
     function addControlGui(controlObject) {
         var gui = new dat.GUI();
-        gui.add(controlObject,'forward');
-        gui.add(controlObject,'back');
-        gui.add(controlObject,'left');
-        gui.add(controlObject,'right');
+        gui.add(controlObject,'forward').name('вперед | forward');
+        gui.add(controlObject,'back').name('назад | back');
+        gui.add(controlObject,'left').name('налево | left');
+        gui.add(controlObject,'right').name('направо | right');
 
     }
 
