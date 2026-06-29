@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>05.05 - Generated Tree</title>
+    <title>05.05 - Сгенерированное дерево | 05.05 - Generated Tree</title>
     <script src="../libs/three.js"></script>
     <script src="../libs/dat.gui.min.js"></script>
     <script src="../libs/stats.min.js"></script>
@@ -281,32 +281,32 @@ function render() {
  */
 function addControlGui(controlObject) {
     var gui = new dat.GUI();
-    gui.add(controlObject,"seed");
-    gui.add(controlObject,"segments");
-    gui.add(controlObject,"levels");
-    gui.add(controlObject,"vMultiplier");
-    gui.add(controlObject,"twigScale");
-    gui.add(controlObject,"initalBranchLength");
-    gui.add(controlObject,"lengthFalloffFactor");
-    gui.add(controlObject,"lengthFalloffPower");
-    gui.add(controlObject,"clumpMax");
-    gui.add(controlObject,"clumpMin");
-    gui.add(controlObject,"branchFactor");
-    gui.add(controlObject,"dropAmount");
-    gui.add(controlObject,"growAmount");
-    gui.add(controlObject,"sweepAmount");
-    gui.add(controlObject,"maxRadius");
-    gui.add(controlObject,"climbRate");
-    gui.add(controlObject,"trunkKink");
-    gui.add(controlObject,"trunkKink");
-    gui.add(controlObject,"treeSteps");
-    gui.add(controlObject,"taperRate");
-    gui.add(controlObject,"radiusFalloffRate");
-    gui.add(controlObject,"twistRate");
-    gui.add(controlObject,"radiusFalloffRate");
-    gui.add(controlObject,"trunkLength");
+    gui.add(controlObject,"seed").name("семя | seed");
+    gui.add(controlObject,"segments").name("сегменты | segments");
+    gui.add(controlObject,"levels").name("уровни | levels");
+    gui.add(controlObject,"vMultiplier").name("МножесвоОтростков | vMultiplier");
+    gui.add(controlObject,"twigScale").name("МасштабВетки | twigScale");
+    gui.add(controlObject,"initalBranchLength").name("ДлинаНачалВетки | initalBranchLength");
+    gui.add(controlObject,"lengthFalloffFactor").name("ФакторСпадаДлины | lengthFalloffFactor");
+    gui.add(controlObject,"lengthFalloffPower").name("СилаСпадаДлины | lengthFalloffPower");
+    gui.add(controlObject,"clumpMax").name("СкоплениеМакс | clumpMax");
+    gui.add(controlObject,"clumpMin").name("СкоплениеМин | clumpMin");
+    gui.add(controlObject,"branchFactor").name("ФакторОтветвления | branchFactor");
+    gui.add(controlObject,"dropAmount").name("ВеличОтбрасывания | dropAmount");
+    gui.add(controlObject,"growAmount").name("ВеличРоста | growAmount");
+    gui.add(controlObject,"sweepAmount").name("ВеличРазвертки | sweepAmount");
+    gui.add(controlObject,"maxRadius").name("макс.Радиус | maxRadius");
+    gui.add(controlObject,"climbRate").name("Скороподъемность | climbRate");
+    gui.add(controlObject,"trunkKink").name("ИзгибСтвола |trunkKink");
+    gui.add(controlObject,"trunkKink").name("ИзгибСтвола |trunkKink");
+    gui.add(controlObject,"treeSteps").name("ШагиДерева | treeSteps");
+    gui.add(controlObject,"taperRate").name("ВеличСужения | taperRate");
+    gui.add(controlObject,"radiusFalloffRate").name("ВеличСпадаРадиуса | radiusFalloffRate");
+    gui.add(controlObject,"twistRate").name("ВеличПоворота | twistRate");
+    gui.add(controlObject,"radiusFalloffRate").name("ВеличСпадаРадиуса | radiusFalloffRate");
+    gui.add(controlObject,"trunkLength").name("ДлинаСтвола | trunkLength");
 
-    gui.add(controlObject,"update");
+    gui.add(controlObject,"update").name("обновить | update");
 }
 
 /**
