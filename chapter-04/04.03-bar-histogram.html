@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>04.03 - Output histogram with colors</title>
+    <title>04.03 - Выходная гистограмма с цветами | 04.03 - Output histogram with colors</title>
     <script src="../libs/three.js"></script>
     <script src="../libs/dat.gui.min.js"></script>
     <script src="../libs/stats.min.js"></script>
@@ -160,7 +160,8 @@ function setupParticleSystem(widht, depth) {
 
 function addControlGui(controlObject) {
     var gui = new dat.GUI();
-    gui.add(controlObject, 'rotationSpeed', -0.01, 0.01);
+    gui.add(controlObject, 'rotationSpeed', -0.01, 0.01).name('СкорВращ | rotationSpeed');
+     
 
 //        gui.addColor(controlObject, 'color');
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>04.01 - Output sound volume</title>
+    <title>04.01 - Громкость выходного вука | 04.01 - Output sound volume</title>
     <script src="../libs/three.js"></script>
     <script src="../libs/dat.gui.min.js"></script>
     <script src="../libs/stats.min.js"></script>
@@ -129,7 +129,7 @@
 
     function addControlGui(controlObject) {
         var gui = new dat.GUI();
-        gui.add(controlObject, 'rotationSpeed', -0.01, 0.01);
+        gui.add(controlObject, 'rotationSpeed', -0.01, 0.01).name('СкорВращ | rotationSpeed');
     }
 
     function addStatsObject() {
