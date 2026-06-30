@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>07.04 - Animation Morph</title>
+    <title>07.04 - Морф в анимации | 07.04 - Animation Morph</title>
     <script src="../libs/three.js"></script>
     <script src="../libs/dat.gui.min.js"></script>
     <script src="../libs/stats.min.js"></script>
@@ -105,7 +105,7 @@
 
     function addControlGui(controlObject) {
         var gui = new dat.GUI();
-        gui.add(controlObject, 'rotationSpeed', -0.01, 0.01);
+        gui.add(controlObject, 'rotationSpeed', -0.01, 0.01).name('СкорВращен | rotationSpeed');
     }
 
     function addStatsObject() {

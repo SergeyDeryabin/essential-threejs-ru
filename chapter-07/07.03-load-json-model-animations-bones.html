@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>07.03 - Animation Bones</title>
+    <title>07.03 - Кости анимации | 07.03 - Animation Bones</title>
     <script src="../libs/three.js"></script>
     <script src="../libs/dat.gui.min.js"></script>
     <script src="../libs/stats.min.js"></script>
@@ -103,7 +103,7 @@
 
     function addControlGui(controlObject) {
         var gui = new dat.GUI();
-        gui.add(controlObject, 'rotationSpeed', -0.01, 0.01);
+        gui.add(controlObject, 'rotationSpeed', -0.01, 0.01).name('СкорВращен | rotationSpeed');
     }
 
     function addStatsObject() {

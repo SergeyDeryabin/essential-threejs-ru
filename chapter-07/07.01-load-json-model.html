@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>07.01 - Load JSON Model</title>
+    <title>07.01 - Загрузить JSON-модель | 07.01 - Load JSON Model</title>
     <script src="../libs/three.js"></script>
     <script src="../libs/dat.gui.min.js"></script>
     <script src="../libs/stats.min.js"></script>
@@ -99,7 +99,7 @@
 
     function addControlGui(controlObject) {
         var gui = new dat.GUI();
-        gui.add(controlObject, 'rotationSpeed', -0.01, 0.01);
+        gui.add(controlObject, 'rotationSpeed', -0.01, 0.01).name('СкорВращен | rotationSpeed');
     }
 
     function addStatsObject() {
