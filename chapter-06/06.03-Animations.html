@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>06.03 - Animations</title>
+    <title>06.03 - Анимации | 06.03 - Animations</title>
     <script src="../libs/three.js"></script>
     <script src="../libs/dat.gui.min.js"></script>
     <script src="../libs/stats.min.js"></script>
@@ -303,10 +303,10 @@ function getCenter(object, face) {
 
 function addControlGui(controlObject) {
     var gui = new dat.GUI();
-    gui.add(controlObject, "toCube");
-    gui.add(controlObject, "toSphere");
-    gui.add(controlObject, "toCylinder");
-    gui.add(controlObject, "toPlane");
+    gui.add(controlObject, "toCube").name("В Куб | toCube");
+    gui.add(controlObject, "toSphere").name("В Сферу | toSphere");
+    gui.add(controlObject, "toCylinder").name("В Цилиндр | toCylinder");
+    gui.add(controlObject, "toPlane").name("В Тор | toPlane");
 }
 
 function addStatsObject() {
