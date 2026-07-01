@@ -242,8 +242,8 @@ function createCloudMaterial() {
 function addControlGui(controlObject) {
     var gui = new dat.GUI();
      gui.add(controlObject, 'rotationSpeed', -0.01, 0.01).name('СкорВращен | rotationSpeed');
-	 gui.add(controlObject, 'ambientLightColor').name('ЦветОкружСвета | ambientLightColor');
-	 gui.add(controlObject, 'directionalLightColor').name('ЦветНаправлСвета | directionalLightColor');
+	 gui.addColor(controlObject, 'ambientLightColor').name('ЦветОкружСвета | ambientLightColor');
+	 gui.addColor(controlObject, 'directionalLightColor').name('ЦветНаправлСвета | directionalLightColor');
 }
 
 function addStatsObject() {
